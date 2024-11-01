@@ -1,0 +1,51 @@
+#share-video-overlay {
+position: absolute;
+float: left;
+top: 10%;
+list-style-type: none;
+display: block;
+opacity: 0;
+filter: alpha(opacity=0);
+-webkit-transition: opacity .4s, top .25s;
+-moz-transition: opacity .4s, top .25s;
+-o-transition: opacity .4s, top .25s;
+transition: opacity .4s, top .25s;
+z-index: 500;
+}
+
+#video-container { 
+	position: relative;
+}
+#video-container:hover #share-video-overlay { 
+opacity:1;
+filter:alpha(opacity=100);
+}
+.entry-content #video-container li{
+	margin: 0;
+}
+.share-video-overlay  li { 
+margin: 5px 0px 5px 0px;
+
+}
+#facebook {
+color: #ffffff;
+background-color: #3e5ea1;
+width: 70px;
+padding: 13px 20px;
+}
+
+.facebook a:link, .facebook a:active, .facebook a:visited { 
+color:#fff!important;
+text-decoration:none;
+} 
+
+#twitter { 
+background-color:#00a6d4;
+width: 70px;
+padding: 13px 20px;
+} 
+
+.twitter a, .twitter a:link, .twitter a:active, .twitter a:visited, .twitter a:hover { 
+color:#FFF!important;
+text-decoration:none;
+}
